@@ -1,0 +1,17 @@
+servidor IIS
+	192.168.254.13
+	
+http://codetunnel.com/hosting-nodejs-applications-on-windows-server-2012-complete-with-git-deployment-and-remote-debugging-part-2/	
+
+node executar js
+https://udgwebdev.com/node-js-para-leigos-instalacao-e-configuracao/
+
+http://www.luiztools.com.br/post/como-rodar-nodejs-em-servidor-windows/
+http://www.luiztools.com.br/post/por-que-aprender-nodejs/
+
+http://nodebr.com/o-que-e-node-js/
+
+https://www.hanselman.com/blog/InstallingAndRunningNodejsApplicationsWithinIISOnWindowsAreYouMad.aspx
+
+Video
+https://www.youtube.com/watch?v=wlxyviIx5eM

@@ -1,0 +1,9 @@
+body {
+  background-color: darkgray;
+}
+
+#bold {      
+    margin: 10px;    
+    padding: 40px;
+    width: center;
+}

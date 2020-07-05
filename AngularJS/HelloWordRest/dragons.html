@@ -1,0 +1,21 @@
+<!doctype html>
+<!--
+	Fonte do Exemplo: https://rafaell-lycan.com/2015/angular-consumindo-servicos-restful/
+	Servidor Rest:
+	https://dragons-api.herokuapp.com/api/dragons
+-->
+<html ng-app="dragons">
+	<head>
+		<title>Dragon AngularJS</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    	<script src="dragons.js"></script>
+	</head>
+
+	<body>	    
+		<div ng-controller="Dragon">
+			<p>Nome {{greeting.items}}</p>
+			<p>Tipo {{greeting.items}}</p>
+			{{greeting}}
+		</div>		
+	</body>
+</html>

@@ -1,0 +1,108 @@
+[Comandos]
+  node -v = verificando versão
+  node nmarq.js = copila aplicação
+  npm -v = verificando versão do npm (gerenciador de pacote)
+  npm init = cria a pkg do projeto
+  npm install nmmodulo -save = para baixar os modulos para prj
+  [MySQL]
+         Execultado com pront de comando 
+         na pasta bin - "mysql -u root -p"
+         show databases; = Para ver as bases registradas no servidor.
+         create database nmdabase = Comando para criar nova data base.
+         use nmdabase = Para acessar/usar base existente.
+         show tables; = Para ver relação de tabelas do database.
+         "create table noticias(
+                   id_noticia int not null primary key auto_increment,
+                   titulo varchar(100),
+                   noticia text,
+                   data_criacao timestamp default current_timestamp);" = Criando tabela.
+[mongoDB]
+    Execultado com pront de comando.
+     na pasta bin - mongod.exe é sessão do servidor e mongo.exe é ambiente para conexão.
+     show dbs; = Lista os banco de dados.
+      use nmbase; = Comando para criar ou usar um base de dados.
+      db.nmdocumento.save({Nome: "Jorge"}); = Comando para criar um documento.
+      db.dropDatabase(); = Comando para excluir uma base de dados.
+      Collections = É igual uma tabela de um banco relacionado;
+      db.createCollection("Nmdocumento") ; = Cria um documento na base de dados = Tabela.
+      db.getCollectionsNames(); = Retorna a relação de collections da base.
+      db.nmcollections.drop(); = Apaga uma collections da base.
+      db.alunos.save({nome: 'José', idade: 30, sexo: 'M', cpf: '123.123.123-12', rg:  '123.123.123-1', matricula: 'abcd123'}); = Criando um documento "Registro".
+       db.alunos.save({nome: 'Fernanda', idade: 32, sexo: 'F', matricula: 'hjk456', cursos_interesse: [{curso: 'Curso Completo do Desenvolver NodeJS'}, {curso: 'Curso Completo de Desenvolvimento WEB - Crie 6 projetos'}]}); = Exemplo de uma collections detro da outra.
+        db.alunos.findOne(); = Recupera o ultimo documento lançado.
+        db.alunos.find(); = Lista todos os documento da collections.
+        db.alunos.find().pretty(); = Lista todos os documento formatado.
+        db.alunos.find({nome:{$eq:"José"}}).pretty(); = Pesquisar um documento (Where =);
+        db.alunos.find({idade:{$lt:31}}).pretty(); = Pesquisar um documento menor que condição (Where <);
+         db.alunos.find({idade:{$lte:30}}).pretty(); = Pesquisar um documento menor/igual que condição (Where <=);
+         db.alunos.find({idade:{$gt:30}}).pretty(); = Where > condição;
+         db.alunos.find({idade:{$gte:30}}).pretty(); = Where >= condição;
+         db.alunos.find({sexo:{$ne:'M'}}).pretty(); = Where <> condição;
+         db.alunos.find({sexo:{$eq:'F'}, idade:{$gt:30}}).pretty(); = Where com and
+         db.alunos.find({$or:[{nome: {$eq: 'Maria'}}, {nome: {$eq: 'José'}}]}).pretty(); = Where com or.
+          db.alunos.update({nome: 'José'}, {$set: {nome: 'João'}}); = Update.
+          db.alunos.update({sexo:'F'}, {$set:{sexo: 'Feminino'}}, {multi:true}); = Atualiza todos registro que atenda a condição. 
+         db.alunos.remove({nome: 'Maria'});  = Delete do sql.
+           db.alunos.remove({idade:{$gt:30}}); = Delete Idade > 30;
+
+[Funções]
+   require = incorpora biblioteca (arq) ao arquivo corrente
+
+[Biblioteca/Modulos=Pacotes]
+   http = Escuta requisições feita na porta especifica
+   express =
+   ejs = Escrever paginas HTML junto com com istruções javascript
+   nodemon =  recurso do ambiente do desenvolvimento (reinstarta o app)
+     instalando = npm install -g nodemon
+     usando = nodemon nmapp
+   mysql = Pacote de conexão do BD MySQL.
+   consign = Configura as rotas automaticamente.
+   ---são middleware---
+   body-parser = Modulo responsável por tratar os retornos do retorno de um form.
+    Express-validator = Responsavel de validar os dados da aplication.
+    Socket.io é um componente que envia mensagems para servidor e para cliente (virse vc versa);
+   mongodb = Modulo para conexão com base do mongodb.
+       "Instalando versão antiga = npm install mongodb@2.2.29 --save" (atual 3.1.13-->curso 2.2.29)
+       Express-session = Pacote para gerenciar session do usuario.
+        crypto = Modulo de criptografia de dados, são eles: MD5; SHA1; Base64;
+        connect-multiparty = trabalha com formulario que envia arquivos ou imagens- enctype = multipart/form-data;
+
+[Programas]
+  SublimeText
+  MySql = Banco de Dados
+  MongoDB = Banco de Dados não relacional.
+  Postman = Extensão do Chrome para testar WebService RESTFull
+
+[Padrão de criação de um novo projeto]
+01) criar um diretorio
+2) iniciar o npm  - comando = npm init 
+3) Baixar as dependencias = express - comando = npm install express --save
+4) Baixar as dependencias = ejs "engine view ejs" - comando = npm install ejs --save
+5) Baixar as dependencias = consign "auto route - interpretador de rota" - comando = npm install consign --save
+6) Baixar as dependencias = body-parser "É middleware que popula a variavel body os elementos req..." - comando = npm install body-parser --save
+7) Baixar as dependencias = express-validator "É middleware para valida dados digit nos form" - comando = npm install express-validator --save
+8) Criar o diretorio config e nele o arquivo server.js
+9) Na raiz criar o arquivo app.js
+10) Criar diretorio app e depois as pastas com base ao padrão design pattern mvc (views; models; controllers; routes; public (css; images; js))
+
+Socket.io é um component que envia mensagems para servidor e para cliente 
+
+O que são URLs; URIs; URNs?
+URI=Subconjuntos de URL e URN.
+URL= Localização dos recursos.
+URN=Nomes de recursos. (Semelhante servidor DNS)
+
+REST? Representation State Transfer (Transferências de estado representacional).
+Verbos HTTP:                                   ---URIs
+POST
+GET
+PUT
+DELETE
+Verbo URI
+POST http://www.dominio.com.br:8080/api = Criação
+GET http://www.dominio.com.br:8080/api = Consulta
+PUT http://www.dominio.com.br:8080/api = Atualização
+DELETE http://www.dominio.com.br:8080/api = Remoção
+Meio Comum = XML ou JSON
+Web Service
+               Conceito RESTFull (POST URI; GET URI; PUT URI; REMOVE URI) = Interface uniforme = RESTFull

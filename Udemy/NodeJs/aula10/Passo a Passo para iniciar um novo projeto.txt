@@ -1,0 +1,13 @@
+01) criar um diretorio
+02) iniciar o npm  - comando = npm init 
+03) Baixar as dependencias = express - comando = npm install express --save
+04) Baixar as dependencias = ejs "engine view ejs" - comando = npm install ejs --save
+05) Baixar as dependencias = consign "auto route - interpretador de rota" - comando = npm install consign --save
+06) Baixar as dependencias = body-parser "É middleware que popula a variavel body os elementos req..." - comando = npm install body-parser --save
+07) Baixar as dependencias = express-validator "É middleware para valida dados digit nos form" - comando = npm install express-validator --save
+08) Criar o diretorio config e nele o arquivo server.js
+09) Na raiz criar o arquivo app.js
+10) Criar diretorio app e depois as pastas com base ao padrão design pattern mvc (views; models; controllers; routes; public (css; images; js))
+
+Socket.io é um component que envia mensagems para servidor e para cliente 
+

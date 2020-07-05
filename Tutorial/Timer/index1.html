@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>Timer: </h1>
+    <h1 id="timer1">00:00:00</h1>   
+
+    <h6 id="timer2">00:00:00</h6>   
+
+    <label id="flavio"></label>
+
+    <button onclick="teste2.stopTimer()">
+       Parar o TIMER 
+    </button>
+
+    
+
+    <script src="time.js"></script>
+    <script>
+        let teste2 = new timerController('#timer1', new Date());
+        let teste3 = new timerController('#timer2', new Date('2019-06-16 15:00:44'));
+        let teste4 = new timerController('#flavio', new Date());
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="helloWorld">
+<head>
+	<title>Hello Word</title>
+	<script src="angular.js"></script>
+	<script> 
+       angular.module("helloWorld", []);
+       /*sublime_text.exe*/
+       //var app = angular.module("helloWorld", []);
+       angular.module("helloWorld").controller("helloWorldCtrl", function ($scope) {
+       	  $scope.message = "Hello Word!";       	
+       });
+    </script>
+</head>
+<body>
+	<div ng-controller="helloWorldCtrl">
+		{{message}}
+	</div>
+</body>
+</html>

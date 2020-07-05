@@ -1,0 +1,27 @@
+Síntaxe
+
+    header, section, footer {
+        background : black;
+    }
+
+header, section, footer = Grupo de seletores
+
+{} = Bloco de declarações
+
+: Separador
+
+background = Propriedade da declarações.
+
+black = Valor de declaração.
+
+; = Fim da declaração.
+
+----------------------
+Tipo de seletores
+
+* Universal = *.
+* Tipo = body.
+* Classes = .bg-black.
+* Atributos = [type="text"].
+* Pseudos = :houver = Ações Mouse, Teclados e etc...
+* ID = #conteudo.

@@ -1,0 +1,30 @@
+https://github.com/hcodebr --> Git do Hcode.
+    git clone https://github.com/hcodebr/curso-javascript-projeto-usuarios.git
+
+    git clone https://github.com/hcodebr/curso-javascript-projeto-calculadora-clone.git
+
+SVG = Linguagem XML para descrever desenho em vetor.
+
+Comandos no console
+    document --> Visualisa do DOM (Atributos do documentos).
+    dir(document) --> ver todos Atributos do documentos. Ver toda arvores de estruturas de objetos do documento.
+    windows [enter] --> Visualisa todos Atributos do navegador (broswer). 
+    windows.close(); --> Fecha a aba do nagegador - Janela por qual esta navegando.
+    document.getElementById('display'); --> Pegando um elemento do ID. ou document.querySelector('#display');
+    document.querySelector('#display');
+
+//For incremental
+    for (let i = 0; i <= 100; i++){
+        console.log(i);
+    }
+
+//For decremental - Exemplo para console
+    for (let i = 100; i >= 0; i--){
+        console.log(i);
+    }
+    
+    
+O metodo split divide os char de uma string em array
+o metodo indexOf verifica se tem um conteudo dentro da nossa array.
+
+

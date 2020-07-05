@@ -1,0 +1,10 @@
+Iniciando o projeto da API através do package.json e criando o server
+--Baixar o arquivo package.json
+--NPM install (package.json)
+	npm install "O npm ira procurar o arquivo package.json, com isto ele ira instalar todas as dependecias contida no arquivo".
+--Configurar a aplicação web
+
+Criar uma rota para receber requisições via Post
+Criar o objeto de conexão com o MongoDB
+Inserir documentos.
+
